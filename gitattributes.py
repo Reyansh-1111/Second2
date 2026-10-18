@@ -94,8 +94,8 @@ print("Okay, let's start the quiz")
 score = 0
 
 print("FIRST QUESTION")
-quiz_first = input("How many continents are there in the world?: ").strip()
-if quiz_first == "7":
+quiz_first = input("How many continents are there in the world?: ").strip().lower()
+if quiz_first in ["7", "seven"]:
     print("Correct!")
     score += 1
 else:
@@ -105,7 +105,7 @@ input()
 
 print("SECOND QUESTION")
 quiz_second = input("What is the largest ocean in the world?: ").strip().lower()
-if quiz_second == "pacific ocean":
+if quiz_second in ["pacific ocean", "the pacific ocean", "pacific"]:
     print("Correct! Wow! You are on a roll!")
     score += 1
 else:
@@ -115,7 +115,7 @@ input()
 
 print("THIRD QUESTION")
 quiz_third = input("What is the name of our galaxy?: ").strip().lower()
-if quiz_third == "milky way":
+if quiz_third in ["milky way", "the milky way", "milkyway", "the milkyway", "milkyway galaxy", "the milkyway galaxy"]:
     print("Correct! You are really smart!")
     score += 1
 else:
@@ -124,8 +124,8 @@ print(f"Your score is {score}")
 input()
 
 print("FOURTH QUESTION")
-quiz_fourth = input("What is 220 times 9?: ").strip()
-if quiz_fourth == "1980":
+quiz_fourth = input("What is 220 times 9?: ").strip().lower()
+if quiz_fourth in ["1980", "one thousand nine hundred eighty"]:
     print("Correct! WOW!! You are really good at math!")
     score += 1
 else:
@@ -145,7 +145,7 @@ input()
 
 print("SIXTH QUESTION")
 quiz_sixth = input("What is the largest planet in our solar system?: ").strip().lower()
-if quiz_sixth == "jupiter":
+if quiz_sixth in ["jupiter", "the jupiter"]:
     print("Correct! You are really smart!")
     score += 1
 else:
